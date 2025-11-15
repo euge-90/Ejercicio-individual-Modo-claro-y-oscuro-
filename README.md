@@ -1,8 +1,8 @@
 Ejercicio individual: Modo claro y oscuro
 Página Personal con Modo Claro/Oscuro
 Materia: Diseño y Desarrollo Web
- Estudiante: Eugenia Ojeda
- Legajo: 1119659
+Estudiante: Eugenia Ojeda
+Legajo: 1119659
 Link a la página web:https://euge-90.github.io/Ejercicio-individual-Modo-claro-y-oscuro-/
 Link al proyecto: https://github.com/euge-90/Ejercicio-individual-Modo-claro-y-oscuro-
  
