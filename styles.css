@@ -1,0 +1,527 @@
+/* ================================================
+   VARIABLES Y CONFIGURACIÓN GENERAL
+   ================================================ */
+
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scroll suave al hacer clic en enlaces internos */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configuración del body - MODO CLARO por defecto */
+body {
+    /* Fuente principal */
+    font-family: 'Poppins', sans-serif;
+    
+    /* Fondo degradado celeste claro */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* Color del texto */
+    color: #333333;
+    
+    /* Transiciones suaves al cambiar de tema */
+    transition: background 0.5s ease, color 0.5s ease;
+    
+    /* Para que el footer quede abajo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido principal crece para empujar el footer abajo */
+main {
+    flex: 1;
+}
+
+
+/* ================================================
+   NAVBAR - BARRA DE NAVEGACIÓN
+   ================================================ */
+
+.navbar {
+    /* Fondo con transparencia */
+    background-color: rgba(102, 126, 234, 0.95) !important;
+    
+    /* Sombra */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Transición suave */
+    transition: background-color 0.5s ease;
+    
+    /* Padding superior e inferior */
+    padding: 1rem 0;
+}
+
+/* Logo/Nombre en el navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+/* Enlaces del menú */
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Botones de tema */
+.theme-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================================================
+   SECCIÓN HERO - PRESENTACIÓN PRINCIPAL
+   ================================================ */
+
+.hero-section {
+    /* Padding superior para compensar el navbar fixed */
+    padding-top: 120px;
+    padding-bottom: 80px;
+    
+    /* Altura mínima */
+    min-height: 100vh;
+    
+    /* Centrar verticalmente */
+    display: flex;
+    align-items: center;
+}
+
+/* Texto de acento (nombre) */
+.text-accent {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la imagen de perfil */
+.profile-image-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Imagen de perfil */
+.profile-image {
+    /* Forma circular */
+    border-radius: 50%;
+    
+    /* Borde grueso */
+    border: 8px solid #ffd700;
+    
+    /* Sombra */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    
+    /* Transición suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Tamaño */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Efecto hover en la imagen */
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+}
+
+
+/* ================================================
+   SECCIONES GENERALES
+   ================================================ */
+
+section {
+    padding: 80px 0;
+}
+
+/* Secciones con fondo alternado */
+.bg-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Títulos de sección */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title i {
+    color: #ffd700;
+}
+
+
+/* ================================================
+   TARJETAS (CARDS)
+   ================================================ */
+
+.card {
+    /* Fondo blanco con transparencia */
+    background-color: rgba(255, 255, 255, 0.95);
+    
+    /* Bordes redondeados */
+    border-radius: 15px;
+    
+    /* Sin borde */
+    border: none;
+    
+    /* Sombra */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Transiciones suaves */
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================================
+   SECCIÓN SOBRE MÍ
+   ================================================ */
+
+.about-card {
+    border: 2px solid #ffd700;
+}
+
+.info-box {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+
+.info-box h4 {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* ================================================
+   TABLA DE HABILIDADES
+   ================================================ */
+
+.skills-table {
+    margin-bottom: 0;
+}
+
+.skills-table thead {
+    background-color: #667eea;
+    color: white;
+}
+
+.skills-table thead th {
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.skills-table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.skills-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.skills-table tbody tr:hover {
+    background-color: rgba(102, 126, 234, 0.1);
+}
+
+/* Badges en la tabla */
+.badge {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+}
+
+
+/* ================================================
+   PROYECTOS
+   ================================================ */
+
+.project-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Icono del proyecto */
+.project-icon {
+    font-size: 3rem;
+    color: #667eea;
+}
+
+/* Tags de tecnologías */
+.tech-tags {
+    margin-top: 15px;
+}
+
+.tech-tags .badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Footer de la tarjeta */
+.card-footer {
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================================================
+   FORMULARIO DE CONTACTO
+   ================================================ */
+
+.form-label {
+    font-weight: 500;
+    color: #667eea;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5568d3;
+    border-color: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline-primary {
+    color: #667eea;
+    border-color: #667eea;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #667eea;
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+/* Enlaces sociales */
+.social-links a {
+    margin: 5px;
+}
+
+
+/* ================================================
+   FOOTER
+   ================================================ */
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-top: auto;
+}
+
+
+/* ================================================
+   MODO OSCURO
+   ================================================ */
+
+/* Cuando el body tiene la clase "dark-mode" */
+body.dark-mode {
+    /* Fondo degradado oscuro */
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    
+    /* Texto claro */
+    color: #f0f0f0;
+}
+
+/* Navbar en modo oscuro */
+body.dark-mode .navbar {
+    background-color: rgba(26, 26, 46, 0.95) !important;
+}
+
+/* Tarjetas en modo oscuro */
+body.dark-mode .card {
+    background-color: rgba(40, 40, 60, 0.9);
+    color: #f0f0f0;
+}
+
+/* Tabla en modo oscuro */
+body.dark-mode .skills-table {
+    color: #f0f0f0;
+}
+
+body.dark-mode .skills-table thead {
+    background-color: #1a1a2e;
+}
+
+body.dark-mode .skills-table tbody tr:hover {
+    background-color: rgba(102, 126, 234, 0.2);
+}
+
+body.dark-mode .skills-table tbody tr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Form controls en modo oscuro */
+body.dark-mode .form-control {
+    background-color: rgba(40, 40, 60, 0.8);
+    border-color: #444;
+    color: #f0f0f0;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: rgba(40, 40, 60, 0.9);
+    border-color: #667eea;
+}
+
+/* Labels en modo oscuro */
+body.dark-mode .form-label {
+    color: #a0a0ff;
+}
+
+/* Títulos de tarjetas en modo oscuro */
+body.dark-mode .card-title {
+    color: #ffd700;
+}
+
+/* Texto de acento en modo oscuro */
+body.dark-mode .text-accent {
+    color: #ffd700;
+}
+
+/* Secciones con fondo en modo oscuro */
+body.dark-mode .bg-section {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Footer en modo oscuro */
+body.dark-mode .footer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Info boxes en modo oscuro */
+body.dark-mode .info-box h4 {
+    color: #a0a0ff;
+}
+
+
+/* ================================================
+   RESPONSIVE - ADAPTACIÓN A MÓVILES
+   ================================================ */
+
+@media (max-width: 768px) {
+    /* Hero section más compacto */
+    .hero-section {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    /* Títulos más pequeños */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Imagen de perfil más pequeña */
+    .profile-image-container {
+        max-width: 300px;
+    }
+    
+    /* Padding de secciones reducido */
+    section {
+        padding: 50px 0;
+    }
+}
+
+
+/* ================================================
+   ANIMACIONES ADICIONALES
+   ================================================ */
+
+/* Animación de fade-in para las tarjetas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación a las tarjetas de proyecto */
+.project-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Retrasar la animación de cada tarjeta */
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de desarrolladora .NET - Estudiante de Tecnicatura en Desarrollo de Software">
+    
+    <!-- Título de la página -->
+    <title>Portfolio - Desarrolladora .NET</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Mi archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ================================================
+         BARRA DE NAVEGACIÓN
+         ================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo/Nombre -->
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-code-square"></i> <span id="nombre-nav">Eugenia Ojeda</span>
+            </a>
+            
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Enlaces del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                
+                <!-- Botones de cambio de tema -->
+                <div class="ms-3 d-flex">
+                    <button id="btn-claro" class="btn btn-outline-light btn-sm me-2 theme-btn">
+                        <i class="bi bi-sun-fill"></i>
+                    </button>
+                    <button id="btn-oscuro" class="btn btn-outline-light btn-sm theme-btn">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================================
+         SECCIÓN HERO (PRESENTACIÓN PRINCIPAL)
+         ================================================ -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Columna de texto -->
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">
+                        Hola, soy <span class="text-accent">Eugenia Ojeda</span>
+                    </h1>
+                    <h2 class="h3 mb-4">Desarrolladora .NET</h2>
+                    <p class="lead mb-4">
+                        Estudiante de Tecnicatura en Desarrollo de Software en UADE (2025). 
+                        Apasionada por crear soluciones tecnológicas innovadoras y eficientes.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#proyectos" class="btn btn-primary btn-lg">
+                            <i class="bi bi-folder-fill"></i> Ver Proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-envelope-fill"></i> Contactar
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna de imagen -->
+                <div class="col-lg-6 text-center">
+                    <div class="profile-image-container">
+                            <!-- Reemplaza esta ruta si tu archivo tiene otro nombre -->
+                            <img src="imagenes/foto.png" 
+                                alt="Foto de perfil" 
+                                class="profile-image img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         SECCIÓN SOBRE MÍ
+         ================================================ -->
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="bi bi-person-circle"></i> Sobre Mí
+            </h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card about-card">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-4 mb-md-0">
+                                    <div class="info-box">
+                                        <i class="bi bi-mortarboard-fill fs-1 text-primary mb-3"></i>
+                                        <h4>Educación</h4>
+                                        <p class="mb-0">Tecnicatura en Desarrollo de Software</p>
+                                        <small class="text-muted">UADE - 2025</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center mb-4 mb-md-0">
+                                    <div class="info-box">
+                                        <i class="bi bi-briefcase-fill fs-1 text-primary mb-3"></i>
+                                        <h4>Especialización</h4>
+                                        <p class="mb-0">Desarrollo .NET</p>
+                                        <small class="text-muted">C# | ASP.NET | SQL Server</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="info-box">
+                                        <i class="bi bi-geo-alt-fill fs-1 text-primary mb-3"></i>
+                                        <h4>Ubicación</h4>
+                                        <p class="mb-0">Buenos Aires</p>
+                                        <small class="text-muted">Argentina</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr class="my-4">
+                            
+                            <div class="text-center">
+                                <p class="lead mb-3">
+                                    Soy una profesional en transición hacia el desarrollo de software, 
+                                    con especial interés en el ecosistema .NET y tecnologías web modernas.
+                                </p>
+                                <p>
+                                    Actualmente cursando la Tecnicatura en Desarrollo de Software en UADE, 
+                                    combino mi experiencia profesional previa con conocimientos técnicos actualizados 
+                                    para crear aplicaciones robustas y escalables.
+                                </p>
+                                <p class="mb-0">
+                                    Mi objetivo es contribuir en proyectos desafiantes donde pueda aplicar 
+                                    mis habilidades en .NET, bases de datos y desarrollo full-stack.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         SECCIÓN HABILIDADES - TABLA
+         ================================================ -->
+    <section id="habilidades" class="py-5 bg-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="bi bi-code-slash"></i> Habilidades Técnicas
+            </h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Tabla de habilidades -->
+                            <div class="table-responsive">
+                                <table class="table table-hover skills-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="col-4">Tecnología</th>
+                                            <th scope="col" class="col-4">Categoría</th>
+                                            <th scope="col" class="col-2 text-center">Nivel</th>
+                                            <th scope="col" class="col-2 text-center">Experiencia</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-file-earmark-code text-primary"></i>
+                                                <strong>C#</strong>
+                                            </td>
+                                            <td>Lenguaje Backend</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Intermedio</span>
+                                            </td>
+                                            <td class="text-center">2 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-window text-primary"></i>
+                                                <strong>ASP.NET Core</strong>
+                                            </td>
+                                            <td>Framework Web</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Intermedio</span>
+                                            </td>
+                                            <td class="text-center">1.5 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-database text-primary"></i>
+                                                <strong>SQL Server</strong>
+                                            </td>
+                                            <td>Base de Datos</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Intermedio</span>
+                                            </td>
+                                            <td class="text-center">2 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-filetype-html text-primary"></i>
+                                                <strong>HTML5 / CSS3</strong>
+                                            </td>
+                                            <td>Frontend</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-info">Avanzado</span>
+                                            </td>
+                                            <td class="text-center">3 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-filetype-js text-primary"></i>
+                                                <strong>JavaScript / jQuery</strong>
+                                            </td>
+                                            <td>Frontend</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Intermedio</span>
+                                            </td>
+                                            <td class="text-center">2 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-bootstrap text-primary"></i>
+                                                <strong>Bootstrap</strong>
+                                            </td>
+                                            <td>Framework CSS</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-info">Avanzado</span>
+                                            </td>
+                                            <td class="text-center">2 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-git text-primary"></i>
+                                                <strong>Git / GitHub</strong>
+                                            </td>
+                                            <td>Control de Versiones</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Intermedio</span>
+                                            </td>
+                                            <td class="text-center">2 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-box text-primary"></i>
+                                                <strong>Entity Framework</strong>
+                                            </td>
+                                            <td>ORM</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-warning">Básico</span>
+                                            </td>
+                                            <td class="text-center">1 año</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-shield-check text-primary"></i>
+                                                <strong>REST APIs</strong>
+                                            </td>
+                                            <td>Servicios Web</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Intermedio</span>
+                                            </td>
+                                            <td class="text-center">1.5 años</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="bi bi-layers text-primary"></i>
+                                                <strong>Arquitectura MVC</strong>
+                                            </td>
+                                            <td>Patrón de Diseño</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Intermedio</span>
+                                            </td>
+                                            <td class="text-center">1.5 años</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Leyenda -->
+                            <div class="mt-4 text-center">
+                                <small class="text-muted">
+                                    <span class="badge bg-info me-2">Avanzado</span>
+                                    <span class="badge bg-success me-2">Intermedio</span>
+                                    <span class="badge bg-warning">Básico</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         SECCIÓN PROYECTOS
+         ================================================ -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="bi bi-folder-fill"></i> Proyectos Destacados
+            </h2>
+            
+            <div class="row g-4">
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-cart-fill"></i>
+                            </div>
+                            <h4 class="card-title">Sistema de E-commerce</h4>
+                            <p class="card-text">
+                                Aplicación web completa desarrollada con ASP.NET Core MVC, 
+                                SQL Server y Bootstrap. Incluye carrito de compras, 
+                                gestión de usuarios y panel administrativo.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary">ASP.NET Core</span>
+                                <span class="badge bg-primary">C#</span>
+                                <span class="badge bg-primary">SQL Server</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h4 class="card-title">Sistema de Gestión de Personal</h4>
+                            <p class="card-text">
+                                API REST desarrollada con .NET 6, implementando arquitectura limpia 
+                                y Entity Framework. Manejo de empleados, departamentos y reportes.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary">.NET 6</span>
+                                <span class="badge bg-primary">Web API</span>
+                                <span class="badge bg-primary">EF Core</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-calendar-check-fill"></i>
+                            </div>
+                            <h4 class="card-title">Aplicación de Tareas</h4>
+                            <p class="card-text">
+                                Sistema de gestión de tareas con .NET Core y Blazor. 
+                                Permite crear, editar y organizar tareas con categorías, 
+                                prioridades y fechas límite.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary">Blazor</span>
+                                <span class="badge bg-primary">C#</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4 class="card-title">Portfolio Personal</h4>
+                            <p class="card-text">
+                                Sitio web personal responsive con modo claro/oscuro. 
+                                Desarrollado con HTML5, CSS3, Bootstrap y jQuery. 
+                                Incluye sección de proyectos y formulario de contacto.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary">HTML/CSS</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                                <span class="badge bg-primary">jQuery</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-book-fill"></i>
+                            </div>
+                            <h4 class="card-title">Blog Técnico</h4>
+                            <p class="card-text">
+                                Plataforma de blog desarrollada con ASP.NET Core Razor Pages. 
+                                Sistema de autenticación, CRUD de artículos y sistema de comentarios.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary">Razor Pages</span>
+                                <span class="badge bg-primary">Identity</span>
+                                <span class="badge bg-primary">SQL Server</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-cloud-fill"></i>
+                            </div>
+                            <h4 class="card-title">Sistema de Archivos Cloud</h4>
+                            <p class="card-text">
+                                Aplicación para almacenamiento y gestión de archivos en la nube. 
+                                Implementa subida de archivos, organización por carpetas y compartir enlaces.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary">ASP.NET Core</span>
+                                <span class="badge bg-primary">Azure</span>
+                                <span class="badge bg-primary">File Upload</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         SECCIÓN CONTACTO
+         ================================================ -->
+    <section id="contacto" class="py-5 bg-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="bi bi-envelope-fill"></i> Contacto
+            </h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <p class="text-center mb-4">
+                                ¿Interesado en trabajar juntos? ¡Me encantaría saber de ti!
+                            </p>
+                            
+                            <!-- Formulario de contacto -->
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-send-fill"></i> Enviar Mensaje
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <!-- Redes sociales -->
+                            <hr class="my-4">
+                            <div class="text-center">
+                                <h5 class="mb-3">Sígueme en:</h5>
+                                <div class="social-links">
+                                    <a href="https://github.com/euge-90" target="_blank" class="btn btn-outline-primary me-2">
+                                        <i class="bi bi-github"></i> GitHub
+                                    </a>
+                                    <a href="https://linkedin.com/in/eugenia-ojeda" target="_blank" class="btn btn-outline-primary me-2">
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </a>
+                                    <a href="mailto:ojedaeugenia08@gmail.com" class="btn btn-outline-primary">
+                                        <i class="bi bi-envelope-fill"></i> Email
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         FOOTER
+         ================================================ -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-2">
+                &copy; 2025 Eugenia Ojeda. Todos los derechos reservados.
+            </p>
+            <p class="mb-0 text-muted">
+                Desarrollado con <i class="bi bi-heart-fill text-danger"></i> usando Bootstrap, jQuery y .NET
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================================================
+         SCRIPTS
+         ================================================ -->
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Mi archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
